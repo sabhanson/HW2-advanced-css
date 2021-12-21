@@ -1,18 +1,19 @@
 * {
-    background-color: wheat;
+    background-color: seagreen;
     font-family: monospace;
     margin: 0%;
     padding: 0%;
 }
 
 header h1 {
-    display: inline-block;
-    font-size: 36px;
+    text-align: left;
 }
-header p{
+
+header p {
     display: inline-block;
-    text-decoration: none;
-    text-emphasis: none;
     text-align: end;
 }
 
+.verticalLine {
+    border-left: thick solid black;
+}
