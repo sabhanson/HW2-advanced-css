@@ -1,19 +1,88 @@
 * {
-    background-color: seagreen;
-    font-family: monospace;
-    margin: 0%;
-    padding: 0%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header h1 {
-    text-align: left;
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header p {
+header {
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: lime;
+    width: 100%;
+}
+
+.hero {
+    background-image: url(./nickkiiii.jpeg);
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero h1 {
+    display: flex;
+    justify-content: flex-end;
+    color: magenta;
+    background-color: maroon;
+    margin: 2rem;
+    
+}
+
+.navbar {
+
+}
+
+.navbarlist a {
+    display: block;
+}
+
+.navbarlist {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
     display: inline-block;
-    text-align: end;
 }
 
-.verticalLine {
-    border-left: thick solid black;
+.about-me {
+    max-width: 80%;
+}
+
+main {
+    max-width: 80%;
+    margin: 30px;
+}
+
+/* .allcards {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+} */
+
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    margin: 10px;
+    width: 45%;
 }
