@@ -16,4 +16,6 @@ It's a website. Visit the link provided, scroll, and click on the navbar at the 
 
 ## Images
 
-<img src="assets/images/screenshot.png">
+```md
+![screenshot of website](images/screenshot.png)
+```

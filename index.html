@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sabrina Hanson's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="reset" href="./assets/reset.css" />
   </head>
 
   <body>
     <header>
-      <h1>Sabrina Hanson</h1>
+      <h1 class="nameBar">Sabrina Hanson</h1>
       <nav class="navbar">
         <ul class="navbarlist">
           <li><a href="#aboutme">About Me</a></li>
@@ -23,26 +25,94 @@
     </header>
 
     <div class="hero">
-      <h1>neat-o subtitle</h1>
+      <h1>SITE IS CURRENTLY BEING REWORKED WITH BULMA</h1>
     </div>
 
-    <section class="about-me">
-      <div><h2 class="about-me-left" id="aboutme">About Me</h2></div>
-      <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil et maiores, fugiat quidem quisquam, velit vitae eligendi cum atque illum dicta expedita sunt earum iusto ducimus incidunt cumque animi.</p>
-      </article>
-    </section>
+    <!-- BULMA STUFF, IN PROGRESS-->
 
-    <main>
+    <div class="columns about-me is-vcentered">
+      <div class="column is-one-quarter ml-5 pl-5">About Me</div>
+      <div class="column is-three-quarters mr-5 pr-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus suscipit
+        voluptatem fugiat fuga eveniet minima aliquam dolor et dolores ipsam
+        dolorem dicta, magnam consectetur temporibus doloribus fugit atque iure
+        recusandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis est, voluptates accusantium asperiores facere sint dolorum a
+        beatae veritatis nobis officiis consectetur aliquid in nam nostrum
+        assumenda atque vel autem? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Delectus hic quibusdam ducimus amet eaque atque, nihil
+        numquam earum. Debitis reiciendis error accusamus non facere? Magni in
+        nesciunt quisquam voluptate nisi!
+      </div>
+    </div>
+
+    <div class="columns work-section is-vcentered">
+      <div class="column is-one-quarter ml-5 pl-5">Work</div>
+      <div class="column is-three-quarters">
+        <div class="columns mr-5 pr-5">
+          <div class="column is-full">
+            <a
+            href="https://zortro.github.io/Project1/index.html"
+            target="_blank">
+            <img src="./assets/images/Project1.png" alt="alt img tag"/>
+            </a>
+            <h3>Oceans of Knowledge</h3>
+            <p>Trivia Game</p>
+            <div class="columns">
+              <div class="column is-half">
+                <a href="#">
+                  <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
+                </a>
+                <h3>Placeholder</h3>
+                <p>placeholder</p>
+              </div>
+              <div class="column is-half">
+                <div class="column is-half">
+                  <a href="#">
+                    <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
+                  </a>
+                  <h3>Placeholder</h3>
+                  <p>placeholder</p>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-half">
+                <div class="column is-half">
+                  <a href="#">
+                    <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
+                  </a>
+                  <h3>Placeholder</h3>
+                  <p>placeholder</p>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="column is-half">
+                  <a href="#">
+                    <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
+                  </a>
+                  <h3>Placeholder</h3>
+                  <p>placeholder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <main>
       <section class="work">
         <h2 id="work">Work</h2>
         <div class="allcards">
           <div class="card bigcard">
-            <a href="#">
-              <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
+            <a
+              href="https://zortro.github.io/Project1/index.html"
+              target="_blank">
+              <img src="./assets/images/Project1.png" alt="alt img tag" />
             </a>
-            <h3>Placeholder</h3>
-            <p>placeholder</p>
+            <h3>Oceans of Knowledge</h3>
+            <p>Trivia Game</p>
           </div>
           <div class="card">
             <a href="#">
@@ -74,7 +144,7 @@
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <footer>
       <h2 id="contactme">Contact Me</h2>
