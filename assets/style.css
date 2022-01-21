@@ -14,25 +14,12 @@ a {
     align-items: center;
 }
 
-header {
-    /* position: fixed; */
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: lightseagreen;
-    width: 100%;
-}
 
 .nameBar {
     padding: 15px;
     padding-left: 80px;
-    font-family: 'Space Mono', monospace;
-    color: white;
-    text-shadow: 0px 0px 5px seagreen;
+    font-family: 'Syne', monospace;
+    color: black;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 0px 20px 20px 0px;
@@ -41,17 +28,29 @@ header {
 }
 
 .big-pic {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: auto;
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
 
 .hero {
     background: linear-gradient(15deg, skyblue, lavender, pink);
     height: 300px;
     width: 100%;
     margin-bottom: 30px;
-    /* display: flex;
-    justify-content: flex-end; */
     align-items: flex-end;
 }
 
@@ -60,86 +59,74 @@ header {
     background-color: white;
     opacity: 70;
     margin-top: 50px;
+    margin-right: -12rem;
+    padding-right: 10rem;
     border: 5px solid white;
-    font-size: 30px;
+    font-size: 1.5rem;
     border-radius: 10px;
-    font-family: monospace;
+    font-family: 'Syne', sans-serif;
+}
+
+.me {
+    width: 30%;
+    height: auto;
+    border: 20px double transparent;
+    border-radius: 50%;
+}
+
+h3 {
+    text-align: center;
 }
 
 
-.navbarlist a {
-    display: block;
+.me:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+
+.about-me-par {
+    font-family: 'Space Mono',cursive;
+    padding-left: 3rem;
+    text-align: left;
+    padding-right: 0;
 }
 
-.navbarlist {
-    width: 30vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-li {
-    display: inline-block;
-    flex-shrink: 0;
-    font-size: 6rem !important;
-}
-
-.aboutMeBox {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-.aboutMeLeft {
-    width: 15%;
-    flex-shrink: 0;
-    font-size: 40px;
+#aboutme {
+    font-family: 'Syne', sans-serif;
+    font-size: 4rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
     text-align: end;
+    margin: .5rem;
     border-right: 3px solid black;
 }
 
-.aboutMeRight {
-    width: 60%;
-    flex-shrink: 0;
-}
-
-
-
-main {
-    max-width: 100%;
-    margin: 30px;
-}
-
-.work {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    /* background-color: green; */
-    align-items: center;
-    /* border-right: 3px solid black; */
-}
-
-.work h2 {
-    font-size: 40px;
-    border: 20px solid transparent;
-    border-right: 5px solid transparent;
-    background-color: transparent;
-    padding: 10px;
-    margin-right: 0px;
+#work {
+    font-family: 'Syne', sans-serif;
+    font-size: 4rem;
+    padding: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 57rem;
+    text-align: end;
+    margin: .5rem;
     border-right: 3px solid black;
-
 }
 
-.card {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 0;
-    margin: 10px;
-    width: 45%;
-}
 
 #contactme {
     font-size: 40px;
@@ -153,5 +140,6 @@ main {
 
 .button {
     color: black;
-    font-family: monospace;
+    font-family: 'Space Mono', monospace;
+    font-weight: lighter;
 }
