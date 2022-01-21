@@ -8,11 +8,47 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css"/>
   </head>
 
   <body>
-    <header>
+
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <h1 class="navbar-item has-background-primary-dark nameBar">
+            Sabrina Hanson
+          </h1>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="#aboutme" class="button has-background-primary-light">
+                <strong>About Me</strong>
+              </a>
+              <a href="#work" class="button has-background-primary-light">
+                Work
+              </a>
+              <a href="#contactme" class="button has-background-primary-light">
+                Contact Me
+              </a>
+              <a href="#" class="button has-background-primary-light">
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- <header>
       <h1 class="nameBar">Sabrina Hanson</h1>
       <nav class="navbar">
         <ul class="navbarlist">
@@ -22,16 +58,26 @@
           <li><a href="#">Resume</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
+
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <p class="subtitle">
+          SITE IS CURRENTLY BEING REWORKED WITH BULMA
+        </p>
+      </div>
+    </section>
+
+<!-- 
     <div class="hero">
       <h1>SITE IS CURRENTLY BEING REWORKED WITH BULMA</h1>
-    </div>
+    </div> -->
 
     <!-- BULMA STUFF, IN PROGRESS-->
 
-    <div class="columns about-me is-vcentered">
-      <div class="column is-one-quarter ml-5 pl-5">About Me</div>
+    <div class="columns is-mobile about-me is-vcentered">
+      <div class="column is-one-quarter ml-5 pl-5" id="aboutme">About Me</div>
       <div class="column is-three-quarters mr-5 pr-5">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus suscipit
         voluptatem fugiat fuga eveniet minima aliquam dolor et dolores ipsam
@@ -47,24 +93,26 @@
     </div>
 
     <div class="columns work-section is-vcentered">
-      <div class="column is-one-quarter ml-5 pl-5">Work</div>
+      <div class="column is-one-quarter ml-5 pl-5" id="work">Work</div>
       <div class="column is-three-quarters">
         <div class="columns mr-5 pr-5">
           <div class="column is-full">
             <a
             href="https://zortro.github.io/Project1/index.html"
             target="_blank">
-            <img src="./assets/images/Project1.png" alt="alt img tag"/>
+            <img src="./assets/images/Project1.png" class="big-pic" alt="alt img tag"/>
             </a>
             <h3>Oceans of Knowledge</h3>
             <p>Trivia Game</p>
             <div class="columns">
               <div class="column is-half">
-                <a href="#">
-                  <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
-                </a>
-                <h3>Placeholder</h3>
-                <p>placeholder</p>
+                <div class="column is-half">
+                  <a href="#">
+                    <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
+                  </a>
+                  <h3>Placeholder</h3>
+                  <p>placeholder</p>
+                </div>
               </div>
               <div class="column is-half">
                 <div class="column is-half">
@@ -101,62 +149,23 @@
       </div>
     </div>
 
-    <!-- <main>
-      <section class="work">
-        <h2 id="work">Work</h2>
-        <div class="allcards">
-          <div class="card bigcard">
-            <a
-              href="https://zortro.github.io/Project1/index.html"
-              target="_blank">
-              <img src="./assets/images/Project1.png" alt="alt img tag" />
-            </a>
-            <h3>Oceans of Knowledge</h3>
-            <p>Trivia Game</p>
-          </div>
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
-            </a>
-            <h3>Placeholder</h3>
-            <p>placeholder</p>
-          </div>
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
-            </a>
-            <h3>Placeholder</h3>
-            <p>placeholder</p>
-          </div>
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
-            </a>
-            <h3>Placeholder</h3>
-            <p>placeholder</p>
-          </div>
-          <div class="card">
-            <a href="#">
-              <img src="./assets/images/nickkiiii.jpeg" alt="alt img tag" />
-            </a>
-            <h3>Placeholder</h3>
-            <p>placeholder</p>
-          </div>
-        </div>
-      </section>
-    </main> -->
 
-    <footer>
-      <h2 id="contactme">Contact Me</h2>
-      <nav>
-        <ul class="contactmelist">
-          <li><a href="#">phone number</a></li>
-          <li><a href="#">email</a></li>
-          <li><a href="#">github</a></li>
-          <li><a href="#">social media</a></li>
-          <li><a href="#">social media</a></li>
-        </ul>
-      </nav>
-    </footer>
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <h2 id="contactme">Contact Me</h2>
+    <nav>
+      <ul class="contactmelist">
+        <li><a href="#">phone number</a></li>
+        <li><a href="#">email</a></li>
+        <li><a href="#">github</a></li>
+        <li><a href="#">social media</a></li>
+        <li><a href="#">social media</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
   </body>
 </html>
