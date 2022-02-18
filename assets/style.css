@@ -43,6 +43,12 @@ body {
   font-family: "Syne", sans-serif;
 }
 
+.about-par {
+    border: 3px dashed var(--limongreen);
+    border-radius: 30px;
+    padding: 30px;
+}
+
 .section-title {
     color: var(--lightsagegreen);
     font-size: 4rem;
@@ -53,6 +59,7 @@ body {
   height: 250px;
   justify-content: end;
   align-items: flex-end;
+  background-image: url('/assets/images/pearl-lake.jpg');
 }
 
 .hero-image {
@@ -62,7 +69,10 @@ body {
 
 .subtitle{ 
     font-size: 1.5rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    padding: 2px;
+    border-radius: 20px;
+    color: var(--lightsagegreen)
 }
 
 .work-grid {
@@ -73,16 +83,21 @@ body {
 .seed {
     position: relative;
     display: inline-block;
+    ;
 }
 
-.img-top {
-    display: none;
+.seed .img-top {
     position: absolute;
+    display: none;
     top: 0;
     left: 0;
-    z-index: 99;
 }
 
 .seed:hover .img-top {
-    display: inline;
+    display: block;
 }
+
+.imagez {
+    width: fit-content;
+}
+
