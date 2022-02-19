@@ -7,7 +7,7 @@
 }
 
 * {
-  cursor: url('/assets/images/favicon.ico'), auto;
+  cursor: url('./images/favicon.ico'), auto;
 }
 
 body {
