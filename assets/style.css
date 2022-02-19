@@ -6,19 +6,20 @@
   font-size: 12pt;
 }
 
+* {
+  cursor: url('/assets/images/favicon.ico'), auto;
+}
+
 body {
     background-color: var(--sagegreen);
 }
 
-.navbar-brand {
+.navbar-myname {
   font-size: 2rem;
   color: var(--lightsagegreen);
-  text-decoration: none;
-}
-
-.navbar-brand:hover {
-    text-decoration: none;
-    color: var(--lightsagegreen);
+  text-shadow: 1px 1px 2px orange;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-collapse {
@@ -26,53 +27,62 @@ body {
   padding: 5px;
 }
 
+/* each element in the navbar (about, work, contact) */
 .nav-link {
   font-size: 1.2rem;
   color: var(--lightsagegreen);
 }
-
+/* hover effect for the navbar elements */
 .nav-link:hover {
     color: var(--limongreen);
 }
-
+/* title font */
 .unica {
   font-family: "Unica One", cursive;
 }
-
+/* accent font */
 .syne {
   font-family: "Syne", sans-serif;
 }
 
 .about-par {
-    border: 3px dashed var(--limongreen);
-    border-radius: 30px;
     padding: 30px;
+    color: black;
 }
 
 .section-title {
     color: var(--lightsagegreen);
+    text-shadow: 1px 1px 2px orange;
     font-size: 4rem;
+}
+
+.work-subtitles {
+  font-size: 1rem;
 }
 
 .hero {
   display: flex;
-  height: 250px;
-  justify-content: end;
-  align-items: flex-end;
-  background-image: url('/assets/images/pearl-lake.jpg');
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("/assets/images/pearl-lake.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid orange;
+  border-radius: 20px;
 }
 
-.hero-image {
-    margin: -5px;
-    padding: -5px;
-}
 
 .subtitle{ 
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 2px;
-    border-radius: 20px;
-    color: var(--lightsagegreen)
+    color: var(--lightsagegreen);
+    text-shadow: 0px 0px 10px black;
+    /* background-color: white;
+    padding: 2px 10px 2px 6px;
+    border-radius: 20px 0px 0px 20px;
+    margin-right: -12px; */
 }
 
 .work-grid {
@@ -80,24 +90,35 @@ body {
     font-size: 1.3rem;
 }
 
-.seed {
-    position: relative;
-    display: inline-block;
-    ;
+.flower {
+  color: var(--lightsagegreen);
+  border: 2px dotted orange;
+  border-radius: 50%;
 }
 
-.seed .img-top {
-    position: absolute;
-    display: none;
-    top: 0;
-    left: 0;
+.flower:hover {
+  color: var(--limongreen);
 }
 
-.seed:hover .img-top {
-    display: block;
+.work-img {
+  width: 100%;
+  height: auto;
 }
 
-.imagez {
-    width: fit-content;
+.work-img:hover {
+  opacity: 70%;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .hero {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
 }
 
