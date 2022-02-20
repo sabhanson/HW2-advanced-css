@@ -7,13 +7,35 @@
 }
 
 * {
-  cursor: url('./images/favicon.ico'), auto;
+  cursor: url("./images/favicon.ico"), auto;
 }
 
 body {
-    background-color: var(--sagegreen);
+  background-color: var(--sagegreen);
 }
 
+/* remove text decoration from a tags */
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+/* remove text decoration from a tags */
+a:hover {
+  text-decoration: none;
+}
+
+/* title font */
+.unica {
+  font-family: "Unica One", cursive;
+}
+
+/* accent font */
+.syne {
+  font-family: "Syne", sans-serif;
+}
+
+/* sabrina hanson in the top left of the navbar */
 .navbar-myname {
   font-size: 2rem;
   color: var(--lightsagegreen);
@@ -22,6 +44,7 @@ body {
   margin: 0;
 }
 
+/* applies to the elements in the navbar and pushes them to the right (end) of the navbar */
 .navbar-collapse {
   justify-content: end;
   padding: 5px;
@@ -31,35 +54,31 @@ body {
 .nav-link {
   font-size: 1.2rem;
   color: var(--lightsagegreen);
+  text-align: center;
 }
-/* hover effect for the navbar elements */
+
+/* hover effect for the navbar elements, changes color when hovered over */
 .nav-link:hover {
-    color: var(--limongreen);
-}
-/* title font */
-.unica {
-  font-family: "Unica One", cursive;
-}
-/* accent font */
-.syne {
-  font-family: "Syne", sans-serif;
+  color: var(--limongreen);
 }
 
-.about-par {
-    padding: 30px;
-    color: black;
+/* flower collapse navbar icon */
+.nav-icon {
+  color: var(--lightsagegreen);
+  font-size: 3rem;
 }
 
-.section-title {
-    color: var(--lightsagegreen);
-    text-shadow: 1px 1px 2px orange;
-    font-size: 4rem;
+/* changes the color of the flower icon to indicate it is clickable */
+.nav-icon:hover {
+  color: var(--limongreen);
 }
 
-.work-subtitles {
-  font-size: 1rem;
+/* gets rid of the black outline on the flower navbar toggler */
+.btn:hover, .btn:focus, .btn:active {
+  color: transparent;
 }
 
+/* hero image of pearl lake  */
 .hero {
   display: flex;
   align-items: center;
@@ -74,51 +93,133 @@ body {
   border-radius: 20px;
 }
 
-
-.subtitle{ 
-    font-size: 1.5rem;
-    color: var(--lightsagegreen);
-    text-shadow: 0px 0px 10px black;
-    /* background-color: white;
-    padding: 2px 10px 2px 6px;
-    border-radius: 20px 0px 0px 20px;
-    margin-right: -12px; */
-}
-
-.work-grid {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.flower {
+/* text in the header image that says "pnw-raised. jr web developer. artist." */
+.hero-subtitle {
+  font-size: 1.5rem;
   color: var(--lightsagegreen);
-  border: 2px dotted orange;
-  border-radius: 50%;
+  text-shadow: 0px 0px 10px black;
 }
 
-.flower:hover {
-  color: var(--limongreen);
+/* title headers for each section ("About Me", "Work", "Contact") */
+.section-title {
+  color: var(--lightsagegreen);
+  text-shadow: 1px 1px 2px orange;
+  font-size: 4rem;
+  text-align: end;
 }
 
-.work-img {
+/* paragraph in the About Me section */
+.about-par {
+  padding: 30px;
+  color: black;
+}
+
+/* each gif in the Work section */
+.gif {
   width: 100%;
+  position: relative;
   height: auto;
+  z-index: 0;
+  border-radius: 20px;
+  padding: 1px;
 }
 
-.work-img:hover {
-  opacity: 70%;
+/* each still image of the gifs */
+.still {
+  width: 98%;
+  position: absolute;
+  z-index: 1;
+  border-radius: 20px;
 }
 
+/* when the still is hovered, it becomes clear to expose the gif underneath */
+.still:hover {
+  opacity: 0%;
+}
 
+/* .image {
+  border-radius: 30px 30px 0px 0px;
+} */
+
+/* caption under each pic in the "Work" section that shows a specific project */
+.work-caption {
+  text-align: center;
+  font-size: 1.1rem;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.bi-github, .bi-globe {
+  color: black;
+  font-size: 2rem;
+}
+
+.bi-github:hover, .bi-globe:hover {
+  color: var(--sagegreen);
+}
+
+.card {
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* media query for phones */
 @media only screen and (max-width: 576px) {
   .hero {
     height: 250px;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .hero {
-    height: 300px;
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+  .nav-item {
+    text-align: center;
   }
 }
 
+/* media query for tablets */
+@media only screen and (max-width: 770px) {
+  .hero {
+    height: 300px;
+  }
+  .nav-item {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .nav-item {
+    text-align: center;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .about-par {
+    text-align: center;
+  }
+}
